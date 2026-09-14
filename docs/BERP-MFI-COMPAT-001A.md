@@ -79,6 +79,10 @@ for controlled probes and carry an explicit site context.
 Every step is idempotence-tested on a disposable copy. A failed step leaves the lab
 NOT ACCEPTED; it is repaired or recreated, never marked successful by documentation.
 
+The readiness command is `docs/compat-001/verify-lab.sh`. Missing client utilities,
+traces or listener evidence are recorded as `UNKNOWN`; the command never converts an
+absent observation into a pass and its manifest explicitly remains non-financial.
+
 ## Instrumentation contract
 
 The first probes are observational:
