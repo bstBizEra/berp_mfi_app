@@ -12,6 +12,9 @@ Browse the [complete documentation index](docs/README.md), including the
 [design audit](docs/BERP-MFI-AUDIT-001.md), role profiles and original proposals.
 Audit findings remain open; uploading the documents does not resolve them.
 
+The latest controlled unit is [001B — Canonical Data Model & Enforcement Registry](docs/BERP-MFI-ARCH-001B.md).
+It remains a draft with explicit compatibility blockers; its test specifications have not run.
+
 Read [BERP-MFI-ARCH-001](docs/BERP-MFI-ARCH-001.md) for module ownership, data
 relationships, workflows, accounting controls, authorization and acceptance tests.
 
