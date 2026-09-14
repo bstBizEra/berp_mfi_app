@@ -83,6 +83,12 @@ The readiness command is `docs/compat-001/verify-lab.sh`. Missing client utiliti
 traces or listener evidence are recorded as `UNKNOWN`; the command never converts an
 absent observation into a pass and its manifest explicitly remains non-financial.
 
+For bounded execution, use `docs/compat-001/run-checkpointed-readiness.sh`. It does
+not create a site; it runs service, site, migration-rerun, doctor, isolation,
+instrumentation and verifier steps independently with a timeout. Each step persists
+timestamps, command hash, exit code, artifact hashes and `PASS`/`FAIL`/`UNKNOWN` in
+`evidence/checkpoints.jsonl`. An inaccessible process is represented as `UNKNOWN`.
+
 ## Instrumentation contract
 
 The first probes are observational:
