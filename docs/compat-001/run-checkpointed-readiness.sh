@@ -29,7 +29,7 @@ run_step() {
   if command -v timeout >/dev/null 2>&1; then
     timeout --signal=TERM --kill-after=10 "$TIMEOUT_SECONDS" sh -c "$command_text" >"$log" 2>&1
     exit_code=$?
-    if [ "$exit_code" -eq 0 ]; then result=PASS; elif [ "$exit_code" -eq 124 ] || [ "$exit_code" -eq 137 ]; then result=UNKNOWN; else result=FAIL; fi
+    if [ "$exit_code" -eq 0 ]; then result=PASS; elif [ "$exit_code" -eq 124 ] || [ "$exit_code" -eq 125 ] || [ "$exit_code" -eq 137 ]; then result=UNKNOWN; else result=FAIL; fi
   else
     printf '%s\n' 'UNKNOWN: timeout utility unavailable' >"$log"
   fi
@@ -61,6 +61,6 @@ run_step STEP-02 'test -d "sites/'"$SITE"'" && bench --site '"$SITE"' list-apps'
 run_step STEP-03 'bench --site '"$SITE"' migrate'
 run_step STEP-04 'bench --site '"$SITE"' doctor'
 run_step STEP-05 'if command -v ss >/dev/null; then ss -lntp; else printf "%s\n" "UNKNOWN: ss unavailable"; exit 125; fi'
-run_step STEP-06 'test -s "'"$EVIDENCE"'/instrumentation.log" && grep -Eq "site=|session=|transaction=|sql=|lock=|timestamp=|correlation=" "'"$EVIDENCE"'/instrumentation.log"'
+run_step STEP-06 'test -s "'"$EVIDENCE"'/instrumentation.log" && grep -Eq "site=[^[:space:]]+" "'"$EVIDENCE"'/instrumentation.log" && grep -Eq "session=[^[:space:]]+" "'"$EVIDENCE"'/instrumentation.log" && grep -Eq "transaction=(BEGIN|COMMIT|ROLLBACK|NONE)" "'"$EVIDENCE"'/instrumentation.log" && grep -Eq "sql=(observed|NONE)" "'"$EVIDENCE"'/instrumentation.log" && grep -Eq "lock=(observed|NONE)" "'"$EVIDENCE"'/instrumentation.log" && grep -Eq "timestamp=[^[:space:]]+" "'"$EVIDENCE"'/instrumentation.log" && grep -Eq "correlation=[^[:space:]]+" "'"$EVIDENCE"'/instrumentation.log"'
 run_step STEP-07 'sh /harness/verify-lab.sh'
 printf '%s\n' 'Checkpoint records persisted; inspect all results before acceptance.'
