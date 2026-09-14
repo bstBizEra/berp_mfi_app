@@ -12,6 +12,7 @@ The repository does not yet contain an installable microfinance application.
 | [001B invariant traceability](BERP-MFI-ARCH-001B-traceability.md) | 90 draft invariant mappings; completeness requires independent review |
 | [Runtime, Dependency & Packaging Contract — 001C](BERP-MFI-ARCH-001C.md) | Candidate R1 runtime and lifecycle boundary; not certified |
 | [Financial Runtime Compatibility Evidence — COMPAT-001](BERP-MFI-COMPAT-001.md) | Incomplete evidence bundle; B-BLK-01 through B-BLK-03 remain open |
+| [Executable Lab Enablement — COMPAT-001A](BERP-MFI-COMPAT-001A.md) | Active lab-only enablement and instrumentation contract; acceptance incomplete |
 | [Design audit](BERP-MFI-AUDIT-001.md) | Eight open findings; read before implementation |
 | [Role profiles and Head Office email design](BERP-MFI-RBAC-001.md) | Historical LaoCapital pilot example, with operational identifiers omitted |
 | [Original role-profile proposal](reference/role-profile-proposal.md) | Archived input; not an approved permission implementation |
@@ -22,9 +23,9 @@ them. In particular, the lending proposal must not replace the parent's deposit
 scope, and the financial transaction contracts require further specification.
 
 Controlled sequence: parent → 001A financial/enforcement contracts → 001B data
-model/enforcement registry → 001C runtime/packaging contract + COMPAT-001 evidence
-→ acceptance review → authorized implementation baseline. No app scaffolding is
-authorized by these draft documents.
+model/enforcement registry → 001C runtime/packaging contract + COMPAT-001A lab
+enablement → COMPAT-001 evidence → acceptance review → authorized implementation
+baseline. No app scaffolding is authorized by these draft documents.
 
 Reference proposals retain their original wording and citation defects for
 traceability. Example limits, company names, branches and email aliases do not

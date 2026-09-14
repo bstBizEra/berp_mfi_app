@@ -19,6 +19,9 @@ The next runtime candidate is [001C](docs/BERP-MFI-ARCH-001C.md), with separate
 [COMPAT-001 evidence](docs/BERP-MFI-COMPAT-001.md). Both remain incomplete and do not
 authorize application scaffolding or financial activation.
 
+[COMPAT-001A](docs/BERP-MFI-COMPAT-001A.md) defines the disposable lab and
+instrumentation handback contract; it does not close any financial blocker.
+
 Read [BERP-MFI-ARCH-001](docs/BERP-MFI-ARCH-001.md) for module ownership, data
 relationships, workflows, accounting controls, authorization and acceptance tests.
 

@@ -23,9 +23,9 @@ bench init --frappe-path /workspace/source-repos/frappe --frappe-branch compat-s
 cd bench
 bench get-app --branch compat-source --skip-assets /workspace/source-repos/erpnext
 bench get-app --branch compat-source --skip-assets /workspace/source-repos/lending
-bench set-config -g db_host mfi-compat-db
-bench set-config -g redis_cache redis://mfi-compat-cache:6379
-bench set-config -g redis_queue redis://mfi-compat-queue:6379
-bench set-config -g redis_socketio redis://mfi-compat-queue:6379
+bench set-config -g db_host 127.0.0.1
+bench set-config -g redis_cache redis://127.0.0.1:6379
+bench set-config -g redis_queue redis://127.0.0.1:6380
+bench set-config -g redis_socketio redis://127.0.0.1:6380
 bench set-config -g developer_mode 0
 echo 'Preparation complete. Site creation is a separate recorded step.'
