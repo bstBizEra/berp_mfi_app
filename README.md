@@ -8,6 +8,10 @@ installable Frappe app. Financial modules, permissions and workflows are not imp
 
 ## Architecture
 
+Browse the [complete documentation index](docs/README.md), including the
+[design audit](docs/BERP-MFI-AUDIT-001.md), role profiles and original proposals.
+Audit findings remain open; uploading the documents does not resolve them.
+
 Read [BERP-MFI-ARCH-001](docs/BERP-MFI-ARCH-001.md) for module ownership, data
 relationships, workflows, accounting controls, authorization and acceptance tests.
 
