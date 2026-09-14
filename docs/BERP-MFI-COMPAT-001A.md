@@ -65,7 +65,8 @@ for controlled probes and carry an explicit site context.
    the synthetic Git commits made from the immutable source archives; those local
    commits satisfy Bench's clone interface and never replace the upstream SHAs.
 4. Create the synthetic site with a disposable generated administrator/database
-   secret supplied through an excluded file. Install ERPNext and Lending, set private
+   secret supplied through `/workspace/secrets/db.env` and `/workspace/secrets/site.env`.
+   Install ERPNext and Lending, set private
    Redis endpoints, disable scheduler and integrations, then migrate.
 5. Verify `bench --site mfi-compat.localhost doctor`, installed-app metadata,
    database/Redis reachability, site file permissions and no external listeners.

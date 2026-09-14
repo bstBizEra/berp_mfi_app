@@ -3,7 +3,7 @@
 set -eu
 cd /workspace/bench
 set -a
-. /workspace/db.env
+. /workspace/secrets/db.env
 . /workspace/secrets/site.env
 set +a
 test -n "${MARIADB_ROOT_PASSWORD:-}"
