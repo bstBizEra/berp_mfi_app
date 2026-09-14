@@ -114,6 +114,13 @@ present. A missing trace is `UNKNOWN`, never inferred success.
 | A7 recreation | clean rebuild from scripts and manifest | Not run |
 | A8 handback | COMPAT-001 evidence bundle with hashes/reviewer | Not run |
 
+The verifier requires installed versions `frappe 16.33.1`, `erpnext 16.34.2` and
+`lending 16.5.0`, verifies the three source archive hashes, and hashes every regular
+file in the evidence directory except the manifest being generated. A6 requires a
+structured probe containing site, session, transaction, SQL, lock, timestamp and
+correlation fields. Any `UNKNOWN` in required evidence causes the verifier to fail;
+it cannot be treated as acceptance evidence.
+
 ## Failure and handback rules
 
 If a dependency cannot install, classify `C-PIN` only after confirming the exact pin,
