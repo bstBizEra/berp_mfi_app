@@ -121,6 +121,16 @@ structured probe containing site, session, transaction, SQL, lock, timestamp and
 correlation fields. Any `UNKNOWN` in required evidence causes the verifier to fail;
 it cannot be treated as acceptance evidence.
 
+## 8. Current execution checkpoint
+
+The disposable site creation log reaches completion, and its redacted site metadata
+records `frappe 16.33.1`, `erpnext 16.34.2` and `lending 16.5.0`, with scheduler
+disabled and Redis configured on private loopback endpoints. This is partial A3/A4
+evidence only: the hardened verifier has not completed, migration rerun is not yet
+recorded, and A2 live service reachability, A5 isolation, A6 structured
+instrumentation, A7 clean recreation and A8 handback remain unproven. No financial
+test ran and no blocker status changed.
+
 ## Failure and handback rules
 
 If a dependency cannot install, classify `C-PIN` only after confirming the exact pin,
