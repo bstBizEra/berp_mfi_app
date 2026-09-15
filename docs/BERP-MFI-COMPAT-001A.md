@@ -1,6 +1,6 @@
 # BERP-MFI-COMPAT-001A — Executable Lab Enablement & Instrumentation
 
-Status: ACCEPTED — lab readiness only; no financial blocker closed.
+Status: REOPENED / EVIDENCE REVIEW INCOMPLETE
 Evidence qualification: the prior A6–A8 acceptance claims require renewed review;
 see [C02 checkpoint corrections](compat-001/C02-checkpoint.md). The historical
 ACCEPTED label alone does not establish those predicates.
@@ -114,14 +114,14 @@ present. A missing trace is `UNKNOWN`, never inferred success.
 
 | Evidence | Required artifact | Status |
 |---|---|---|
-| A1 pins | source/image hashes and installed versions | PASS — exact R1 inputs and versions |
-| A2 services | private MariaDB/Redis health and version output | PASS |
-| A3 site | fresh synthetic site and installed-app manifest | PASS |
-| A4 migration | clean migration and rerun result | PASS |
-| A5 isolation | no public listeners, synthetic-only data, file/worker scope | PASS |
-| A6 instrumentation | redacted transaction/SQL/lock/lifecycle trace | PASS — structured harmless probe |
-| A7 recreation | clean rebuild from scripts and manifest | PASS — second clean build |
-| A8 handback | COMPAT-001 evidence bundle with hashes/reviewer | PASS — persisted review |
+| A1 pins | source/image hashes and installed versions | Substantiated by prior execution |
+| A2 services | private MariaDB/Redis health and version output | Substantiated by prior execution |
+| A3 site | fresh synthetic site and installed-app manifest | Substantiated by prior execution |
+| A4 migration | clean migration and rerun result | Substantiated by prior execution |
+| A5 isolation | no public listeners, synthetic-only data, file/worker scope | Likely substantiated; evidence review retained |
+| A6 instrumentation | redacted transaction/SQL/lock/lifecycle trace | REOPENED — measured same-session evidence required |
+| A7 recreation | clean rebuild from scripts and manifest | REOPENED — semantic comparison required |
+| A8 handback | COMPAT-001 evidence bundle with hashes/reviewer | REOPENED — independent review required |
 
 The verifier requires installed versions `frappe 16.33.1`, `erpnext 16.34.2` and
 `lending 16.5.0`, verifies the three source archive hashes, and hashes every regular
@@ -130,7 +130,7 @@ structured probe containing site, session, transaction, SQL, lock, timestamp and
 correlation fields. Any `UNKNOWN` in required evidence causes the verifier to fail;
 it cannot be treated as acceptance evidence.
 
-## 8. Execution result
+## 8. Historical execution result — insufficient for acceptance
 
 On the private `berp-linux` VM, the frozen checkpoint runner passed STEP-01 through
 STEP-07 with `unknown_count=0`. Both the initial site and a clean destroy/recreate
@@ -138,7 +138,10 @@ run installed `frappe 16.33.1`, `erpnext 16.34.2` and `lending 16.5.0`; migratio
 and safe rerun passed; MariaDB and Redis remained private; and the structured probe
 recorded site, session, transaction, SQL, lock, timestamp and correlation fields.
 The A7 comparison is persisted as `evidence/recreation-compare.txt`, and the A8
-review is persisted as `evidence/a8-handback-review.txt`. No financial test ran.
+review is persisted as `evidence/a8-handback-review.txt`. These generated results
+overstated A6–A8: instrumentation mixed sessions and declared unmeasured fields,
+recreation differences were not semantically evaluated, and handback PASS values
+were hard-coded without independent review. No financial test ran.
 
 ## Failure and handback rules
 
@@ -149,7 +152,8 @@ invariant cannot be satisfied, create a `C-ARCH` finding and return to 001A revi
 Do not patch upstream, add an MFI hook, weaken a lock order, or call a financial test
 green to make the lab pass.
 
-The acceptance contract is complete for lab readiness. Hand back only the immutable
-manifest, redacted logs, topology and recreation commands. COMPAT-001 now resumes C02
-transaction topology, then C03 lock-order feasibility, before any financial prototype
-or Model A test. B-BLK-01, B-BLK-02 and B-BLK-03 remain open and IMP-001 remains locked.
+The acceptance contract is incomplete. Renew A6 with measured instrumentation,
+A7 with semantic recreation comparison, and A8 through independent evidence review.
+COMPAT-001 remains active with C02 incomplete. C03 is not started/unproven and
+requires database-side lock observations after topology review. B-BLK-01,
+B-BLK-02 and B-BLK-03 remain open and IMP-001 remains locked.
