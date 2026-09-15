@@ -1,0 +1,110 @@
+{
+  "financial_correctness": "NOT_RUN",
+  "loan": "ACC-LOAN-2026-00006",
+  "lock_observation": "NOT_RUN",
+  "probes": [
+    {
+      "after": {
+        "GL Entry": 0,
+        "Loan": 6,
+        "Loan Disbursement": 0,
+        "Loan Repayment": 0,
+        "Payment Ledger Entry": 0
+      },
+      "before": {
+        "GL Entry": 0,
+        "Loan": 6,
+        "Loan Disbursement": 0,
+        "Loan Repayment": 0,
+        "Payment Ledger Entry": 0
+      },
+      "durable_delta": {
+        "GL Entry": 0,
+        "Loan": 0,
+        "Loan Disbursement": 0,
+        "Loan Repayment": 0,
+        "Payment Ledger Entry": 0
+      },
+      "label": "R3-01-repayment-rollback",
+      "operation": "success"
+    },
+    {
+      "after": {
+        "GL Entry": 0,
+        "Loan": 6,
+        "Loan Disbursement": 0,
+        "Loan Repayment": 0,
+        "Payment Ledger Entry": 0
+      },
+      "before": {
+        "GL Entry": 0,
+        "Loan": 6,
+        "Loan Disbursement": 0,
+        "Loan Repayment": 0,
+        "Payment Ledger Entry": 0
+      },
+      "durable_delta": {
+        "GL Entry": 0,
+        "Loan": 0,
+        "Loan Disbursement": 0,
+        "Loan Repayment": 0,
+        "Payment Ledger Entry": 0
+      },
+      "label": "R3-02-disbursement-rollback",
+      "operation": "success"
+    },
+    {
+      "after": {
+        "GL Entry": 2,
+        "Loan": 6,
+        "Loan Disbursement": 0,
+        "Loan Repayment": 1,
+        "Payment Ledger Entry": 1
+      },
+      "before": {
+        "GL Entry": 0,
+        "Loan": 6,
+        "Loan Disbursement": 0,
+        "Loan Repayment": 0,
+        "Payment Ledger Entry": 0
+      },
+      "durable_delta": {
+        "GL Entry": 2,
+        "Loan": 0,
+        "Loan Disbursement": 0,
+        "Loan Repayment": 1,
+        "Payment Ledger Entry": 1
+      },
+      "label": "R3-03-repayment-commit",
+      "operation": "success"
+    },
+    {
+      "after": {
+        "GL Entry": 2,
+        "Loan": 6,
+        "Loan Disbursement": 0,
+        "Loan Repayment": 1,
+        "Payment Ledger Entry": 1
+      },
+      "before": {
+        "GL Entry": 2,
+        "Loan": 6,
+        "Loan Disbursement": 0,
+        "Loan Repayment": 1,
+        "Payment Ledger Entry": 1
+      },
+      "durable_delta": {
+        "GL Entry": 0,
+        "Loan": 0,
+        "Loan Disbursement": 0,
+        "Loan Repayment": 0,
+        "Payment Ledger Entry": 0
+      },
+      "exception": "RuntimeError: C02-R3 controlled failure before outer commit",
+      "label": "R3-04-failure-before-commit",
+      "operation": "exception"
+    }
+  ],
+  "run": "b47025db038041e19ff8f182009cde9c",
+  "site": "mfi-compat.localhost"
+}

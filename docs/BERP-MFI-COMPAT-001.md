@@ -48,7 +48,7 @@ and runtime call order remain unresolved.
 | Group | Required question | Current result | Class / status |
 |---|---|---|---|
 | C01 pins | Are exact upstream pins identified? | Yes, three commit SHAs and archive hashes recorded | C-OBS complete |
-| C02 topology | What transaction and DB boundaries are actually used? | Baseline retrieved, hashes checked and trace reviewed; request sessions/observer effects and worker/Lending/GL coverage unresolved; see [checkpoint](compat-001/C02-checkpoint.md) | C-OBS incomplete |
+| C02 topology | What transaction and DB boundaries are actually used? | R2 generic and R3 CLI Lending→GL traces reviewed; request/worker, after-commit and error-log coverage unresolved; see [C02-R3 results](compat-001/C02-R3-results.md) | C-OBS incomplete |
 | C03 lock order | Can policy → exposure → reservation → account/loan locks be acquired safely? | Not proven; source inspection found early Frappe document locking before pre-save methods | C-ARCH candidate / B-BLK-01 open |
 | C04 path inventory | Are Desk/REST/RPC/import/job/direct/bulk/cancel/repost paths classified? | Static candidates generated; resolved path × actor × bypass inventory not complete | C-MAP open / B-BLK-02 open |
 | C05 Lending mutations | Are all financial mutation and cancellation paths mapped? | Repayment/disbursement symbols inspected; other actions remain unresolved | C-OBS incomplete |
