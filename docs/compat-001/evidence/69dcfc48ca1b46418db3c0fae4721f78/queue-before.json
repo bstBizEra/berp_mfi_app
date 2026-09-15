@@ -1,0 +1,249 @@
+{
+  "workers": [],
+  "queues": {
+    "short": {
+      "jobs": [],
+      "registries": {
+        "started": [],
+        "finished": [],
+        "failed": [],
+        "deferred": [],
+        "scheduled": [],
+        "canceled": []
+      }
+    },
+    "default": {
+      "jobs": [
+        {
+          "job_id": "mfi-compat.localhost||58cf1b97-6f5e-455a-987a-531fcb3fd344",
+          "method": "frappe.model.delete_doc.delete_dynamic_links",
+          "site": "mfi-compat.localhost",
+          "event": null,
+          "job_name": "frappe.model.delete_doc.delete_dynamic_links",
+          "kwargs_hash": "a7e07ee951a6ef1b1880cfe74623276163eb7293411cf726a2e2af65e13632c0",
+          "enqueued_at": "2026-09-15 01:45:02.543691+00:00",
+          "status": "JobStatus.QUEUED",
+          "origin": "UNKNOWN"
+        },
+        {
+          "job_id": "mfi-compat.localhost||b1ff3735-0d39-450e-ad7c-fd088eee59f2",
+          "method": "frappe.model.delete_doc.delete_dynamic_links",
+          "site": "mfi-compat.localhost",
+          "event": null,
+          "job_name": "frappe.model.delete_doc.delete_dynamic_links",
+          "kwargs_hash": "30b2ad5601f43d4cdd1f17bd98bc7b627ffad47959581422aff58967ae9f1267",
+          "enqueued_at": "2026-09-15 01:45:02.556174+00:00",
+          "status": "JobStatus.QUEUED",
+          "origin": "UNKNOWN"
+        },
+        {
+          "job_id": "mfi-compat.localhost||d9e03958-292c-4fd2-b649-7e631d7b0253",
+          "method": "frappe.model.delete_doc.delete_dynamic_links",
+          "site": "mfi-compat.localhost",
+          "event": null,
+          "job_name": "frappe.model.delete_doc.delete_dynamic_links",
+          "kwargs_hash": "6317f7de350cc94702af10f93213b89bb54ebdaf8a0cf23a21c487eb94aa156f",
+          "enqueued_at": "2026-09-15 01:45:02.565152+00:00",
+          "status": "JobStatus.QUEUED",
+          "origin": "UNKNOWN"
+        },
+        {
+          "job_id": "mfi-compat.localhost||f479b2a3-79bd-4568-9f1e-7de8a31feea4",
+          "method": "frappe.model.delete_doc.delete_dynamic_links",
+          "site": "mfi-compat.localhost",
+          "event": null,
+          "job_name": "frappe.model.delete_doc.delete_dynamic_links",
+          "kwargs_hash": "83b437a54c5f516ad530e7a083df173ee3149a9142a7e90a62ddd3686714e6e7",
+          "enqueued_at": "2026-09-15 01:45:02.575207+00:00",
+          "status": "JobStatus.QUEUED",
+          "origin": "UNKNOWN"
+        },
+        {
+          "job_id": "mfi-compat.localhost||60d08af8-0c21-43d6-b27b-558033093f0a",
+          "method": "frappe.model.delete_doc.delete_dynamic_links",
+          "site": "mfi-compat.localhost",
+          "event": null,
+          "job_name": "frappe.model.delete_doc.delete_dynamic_links",
+          "kwargs_hash": "156baecedc42d2471edcb58dfc579484abaa24ccbb6380a01332f766c9eb4a05",
+          "enqueued_at": "2026-09-15 01:45:02.584522+00:00",
+          "status": "JobStatus.QUEUED",
+          "origin": "UNKNOWN"
+        },
+        {
+          "job_id": "mfi-compat.localhost||fb852a71-d4a1-44e6-b103-1ecbabcbb9a5",
+          "method": "frappe.model.delete_doc.delete_dynamic_links",
+          "site": "mfi-compat.localhost",
+          "event": null,
+          "job_name": "frappe.model.delete_doc.delete_dynamic_links",
+          "kwargs_hash": "a8615b2a2f390da8be8a7b259853e4e596d08e852c2871f80c19eddb2276a99f",
+          "enqueued_at": "2026-09-15 01:45:02.593063+00:00",
+          "status": "JobStatus.QUEUED",
+          "origin": "UNKNOWN"
+        },
+        {
+          "job_id": "mfi-compat.localhost||1c70d38f-db7e-48f6-9b59-1be0111f5d15",
+          "method": "frappe.model.delete_doc.delete_dynamic_links",
+          "site": "mfi-compat.localhost",
+          "event": null,
+          "job_name": "frappe.model.delete_doc.delete_dynamic_links",
+          "kwargs_hash": "d6ba8be3ec7d9fb72a2d916953b36934d89891241a62b8a304665678b1a6c3b4",
+          "enqueued_at": "2026-09-15 01:45:02.603842+00:00",
+          "status": "JobStatus.QUEUED",
+          "origin": "UNKNOWN"
+        },
+        {
+          "job_id": "mfi-compat.localhost||aa2409df-7855-46e3-a3fe-b2aefd770b0b",
+          "method": "frappe.model.delete_doc.delete_dynamic_links",
+          "site": "mfi-compat.localhost",
+          "event": null,
+          "job_name": "frappe.model.delete_doc.delete_dynamic_links",
+          "kwargs_hash": "64ba11f569ec8e686eede76ff3509acc0769558454335f93c894ba2acce91401",
+          "enqueued_at": "2026-09-15 01:45:02.614886+00:00",
+          "status": "JobStatus.QUEUED",
+          "origin": "UNKNOWN"
+        },
+        {
+          "job_id": "mfi-compat.localhost||41b577db-c36d-461c-8d12-afd0c830086e",
+          "method": "frappe.model.delete_doc.delete_dynamic_links",
+          "site": "mfi-compat.localhost",
+          "event": null,
+          "job_name": "frappe.model.delete_doc.delete_dynamic_links",
+          "kwargs_hash": "78fb66d384a976b9347b980be293cd01d44c583d2e4f865d627a0ece4489b2be",
+          "enqueued_at": "2026-09-15 01:45:02.622593+00:00",
+          "status": "JobStatus.QUEUED",
+          "origin": "UNKNOWN"
+        },
+        {
+          "job_id": "mfi-compat.localhost||33770f1a-9f18-41f9-be75-3c6b59722561",
+          "method": "frappe.model.delete_doc.delete_dynamic_links",
+          "site": "mfi-compat.localhost",
+          "event": null,
+          "job_name": "frappe.model.delete_doc.delete_dynamic_links",
+          "kwargs_hash": "a2c92446f5aba5b1704d7b06ec69eae2b0d1605f6006ed677f22ec5b6b55a07b",
+          "enqueued_at": "2026-09-15 01:45:02.629923+00:00",
+          "status": "JobStatus.QUEUED",
+          "origin": "UNKNOWN"
+        },
+        {
+          "job_id": "mfi-compat.localhost||da05f3b8-36a4-42ea-a81f-6d7baa76205d",
+          "method": "frappe.model.delete_doc.delete_dynamic_links",
+          "site": "mfi-compat.localhost",
+          "event": null,
+          "job_name": "frappe.model.delete_doc.delete_dynamic_links",
+          "kwargs_hash": "6d58a5acca921129af891c11a91b7af9c921dae516f302805f3e8d693a9e25d1",
+          "enqueued_at": "2026-09-15 01:45:02.635674+00:00",
+          "status": "JobStatus.QUEUED",
+          "origin": "UNKNOWN"
+        },
+        {
+          "job_id": "mfi-compat.localhost||be85f349-8e3b-4369-8af8-62344a38c9e7",
+          "method": "frappe.model.delete_doc.delete_dynamic_links",
+          "site": "mfi-compat.localhost",
+          "event": null,
+          "job_name": "frappe.model.delete_doc.delete_dynamic_links",
+          "kwargs_hash": "2050292501cfa1a475aec626631a8e82597fb2b0444ab5c82127c11f6c1690ed",
+          "enqueued_at": "2026-09-15 01:45:25.459806+00:00",
+          "status": "JobStatus.QUEUED",
+          "origin": "UNKNOWN"
+        }
+      ],
+      "registries": {
+        "started": [],
+        "finished": [],
+        "failed": [],
+        "deferred": [],
+        "scheduled": [],
+        "canceled": []
+      }
+    },
+    "long": {
+      "jobs": [
+        {
+          "job_id": "mfi-compat.localhost||b8e2fb0d-89ea-45e2-8890-f7c107e3a153",
+          "method": "frappe.search.website_search.build_index_for_all_routes",
+          "site": "mfi-compat.localhost",
+          "event": null,
+          "job_name": "frappe.search.website_search.build_index_for_all_routes",
+          "kwargs_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "enqueued_at": "2026-09-15 01:45:25.825443+00:00",
+          "status": "JobStatus.QUEUED",
+          "origin": "UNKNOWN"
+        },
+        {
+          "job_id": "mfi-compat.localhost||dfdf31d1-6b51-49f5-83e2-c96ee13148b6",
+          "method": "frappe.search.website_search.build_index_for_all_routes",
+          "site": "mfi-compat.localhost",
+          "event": null,
+          "job_name": "frappe.search.website_search.build_index_for_all_routes",
+          "kwargs_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "enqueued_at": "2026-09-15 01:46:02.681787+00:00",
+          "status": "JobStatus.QUEUED",
+          "origin": "UNKNOWN"
+        },
+        {
+          "job_id": "mfi-compat.localhost||cbb1eff6-69e7-4022-9726-3c638275bcc3",
+          "method": "frappe.search.website_search.build_index_for_all_routes",
+          "site": "mfi-compat.localhost",
+          "event": null,
+          "job_name": "frappe.search.website_search.build_index_for_all_routes",
+          "kwargs_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "enqueued_at": "2026-09-15 01:46:15.586585+00:00",
+          "status": "JobStatus.QUEUED",
+          "origin": "UNKNOWN"
+        },
+        {
+          "job_id": "mfi-compat.localhost||e9f93b2d-97ea-4c56-bbdf-dd3428f710d6",
+          "method": "frappe.search.website_search.build_index_for_all_routes",
+          "site": "mfi-compat.localhost",
+          "event": null,
+          "job_name": "frappe.search.website_search.build_index_for_all_routes",
+          "kwargs_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "enqueued_at": "2026-09-15 01:48:12.853727+00:00",
+          "status": "JobStatus.QUEUED",
+          "origin": "UNKNOWN"
+        },
+        {
+          "job_id": "mfi-compat.localhost||0dc246e9-ecb1-4780-a91d-cba645f9b06e",
+          "method": "frappe.search.website_search.build_index_for_all_routes",
+          "site": "mfi-compat.localhost",
+          "event": null,
+          "job_name": "frappe.search.website_search.build_index_for_all_routes",
+          "kwargs_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "enqueued_at": "2026-09-15 01:48:24.455084+00:00",
+          "status": "JobStatus.QUEUED",
+          "origin": "UNKNOWN"
+        }
+      ],
+      "registries": {
+        "started": [],
+        "finished": [],
+        "failed": [],
+        "deferred": [],
+        "scheduled": [],
+        "canceled": []
+      }
+    }
+  },
+  "rq_keys": [
+    "rq:job:mfi-compat.localhost||0dc246e9-ecb1-4780-a91d-cba645f9b06e",
+    "rq:job:mfi-compat.localhost||1c70d38f-db7e-48f6-9b59-1be0111f5d15",
+    "rq:job:mfi-compat.localhost||33770f1a-9f18-41f9-be75-3c6b59722561",
+    "rq:job:mfi-compat.localhost||41b577db-c36d-461c-8d12-afd0c830086e",
+    "rq:job:mfi-compat.localhost||58cf1b97-6f5e-455a-987a-531fcb3fd344",
+    "rq:job:mfi-compat.localhost||60d08af8-0c21-43d6-b27b-558033093f0a",
+    "rq:job:mfi-compat.localhost||aa2409df-7855-46e3-a3fe-b2aefd770b0b",
+    "rq:job:mfi-compat.localhost||b1ff3735-0d39-450e-ad7c-fd088eee59f2",
+    "rq:job:mfi-compat.localhost||b8e2fb0d-89ea-45e2-8890-f7c107e3a153",
+    "rq:job:mfi-compat.localhost||be85f349-8e3b-4369-8af8-62344a38c9e7",
+    "rq:job:mfi-compat.localhost||cbb1eff6-69e7-4022-9726-3c638275bcc3",
+    "rq:job:mfi-compat.localhost||d9e03958-292c-4fd2-b649-7e631d7b0253",
+    "rq:job:mfi-compat.localhost||da05f3b8-36a4-42ea-a81f-6d7baa76205d",
+    "rq:job:mfi-compat.localhost||dfdf31d1-6b51-49f5-83e2-c96ee13148b6",
+    "rq:job:mfi-compat.localhost||e9f93b2d-97ea-4c56-bbdf-dd3428f710d6",
+    "rq:job:mfi-compat.localhost||f479b2a3-79bd-4568-9f1e-7de8a31feea4",
+    "rq:job:mfi-compat.localhost||fb852a71-d4a1-44e6-b103-1ecbabcbb9a5",
+    "rq:queue:workspace-bench:default",
+    "rq:queue:workspace-bench:long",
+    "rq:queues"
+  ]
+}

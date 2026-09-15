@@ -1,0 +1,2 @@
+/mfi-a7-a2-db network=none ports={} image=sha256:2d2f4095530294735a857cfe22bb101e19b0849b416911c796ec4aa81b164a62
+/mfi-a7-a2-runner network=container:db3ddc19c5f0101c372f198d072a5518724d57542fb0255a2822f501fa6b3aa8 ports={} image=sha256:2132ebefed475ab4b898e0847fe00e1a8f50413dc528aafdecd188428e21b0a6

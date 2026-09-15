@@ -1,0 +1,219 @@
+{
+  "builds": {
+    "build1": {
+      "normalized": {
+        "queues": {
+          "default": {
+            "jobs": [
+              [
+                "{\"event\": null, \"job_name\": \"frappe.model.delete_doc.delete_dynamic_links\", \"kwargs_hash\": \"156baecedc42d2471edcb58dfc579484abaa24ccbb6380a01332f766c9eb4a05\", \"method\": \"frappe.model.delete_doc.delete_dynamic_links\", \"site\": \"mfi-compat.localhost\", \"status\": \"JobStatus.QUEUED\"}",
+                1
+              ],
+              [
+                "{\"event\": null, \"job_name\": \"frappe.model.delete_doc.delete_dynamic_links\", \"kwargs_hash\": \"2050292501cfa1a475aec626631a8e82597fb2b0444ab5c82127c11f6c1690ed\", \"method\": \"frappe.model.delete_doc.delete_dynamic_links\", \"site\": \"mfi-compat.localhost\", \"status\": \"JobStatus.QUEUED\"}",
+                1
+              ],
+              [
+                "{\"event\": null, \"job_name\": \"frappe.model.delete_doc.delete_dynamic_links\", \"kwargs_hash\": \"30b2ad5601f43d4cdd1f17bd98bc7b627ffad47959581422aff58967ae9f1267\", \"method\": \"frappe.model.delete_doc.delete_dynamic_links\", \"site\": \"mfi-compat.localhost\", \"status\": \"JobStatus.QUEUED\"}",
+                1
+              ],
+              [
+                "{\"event\": null, \"job_name\": \"frappe.model.delete_doc.delete_dynamic_links\", \"kwargs_hash\": \"6317f7de350cc94702af10f93213b89bb54ebdaf8a0cf23a21c487eb94aa156f\", \"method\": \"frappe.model.delete_doc.delete_dynamic_links\", \"site\": \"mfi-compat.localhost\", \"status\": \"JobStatus.QUEUED\"}",
+                1
+              ],
+              [
+                "{\"event\": null, \"job_name\": \"frappe.model.delete_doc.delete_dynamic_links\", \"kwargs_hash\": \"64ba11f569ec8e686eede76ff3509acc0769558454335f93c894ba2acce91401\", \"method\": \"frappe.model.delete_doc.delete_dynamic_links\", \"site\": \"mfi-compat.localhost\", \"status\": \"JobStatus.QUEUED\"}",
+                1
+              ],
+              [
+                "{\"event\": null, \"job_name\": \"frappe.model.delete_doc.delete_dynamic_links\", \"kwargs_hash\": \"6d58a5acca921129af891c11a91b7af9c921dae516f302805f3e8d693a9e25d1\", \"method\": \"frappe.model.delete_doc.delete_dynamic_links\", \"site\": \"mfi-compat.localhost\", \"status\": \"JobStatus.QUEUED\"}",
+                1
+              ],
+              [
+                "{\"event\": null, \"job_name\": \"frappe.model.delete_doc.delete_dynamic_links\", \"kwargs_hash\": \"78fb66d384a976b9347b980be293cd01d44c583d2e4f865d627a0ece4489b2be\", \"method\": \"frappe.model.delete_doc.delete_dynamic_links\", \"site\": \"mfi-compat.localhost\", \"status\": \"JobStatus.QUEUED\"}",
+                1
+              ],
+              [
+                "{\"event\": null, \"job_name\": \"frappe.model.delete_doc.delete_dynamic_links\", \"kwargs_hash\": \"83b437a54c5f516ad530e7a083df173ee3149a9142a7e90a62ddd3686714e6e7\", \"method\": \"frappe.model.delete_doc.delete_dynamic_links\", \"site\": \"mfi-compat.localhost\", \"status\": \"JobStatus.QUEUED\"}",
+                1
+              ],
+              [
+                "{\"event\": null, \"job_name\": \"frappe.model.delete_doc.delete_dynamic_links\", \"kwargs_hash\": \"a2c92446f5aba5b1704d7b06ec69eae2b0d1605f6006ed677f22ec5b6b55a07b\", \"method\": \"frappe.model.delete_doc.delete_dynamic_links\", \"site\": \"mfi-compat.localhost\", \"status\": \"JobStatus.QUEUED\"}",
+                1
+              ],
+              [
+                "{\"event\": null, \"job_name\": \"frappe.model.delete_doc.delete_dynamic_links\", \"kwargs_hash\": \"a7e07ee951a6ef1b1880cfe74623276163eb7293411cf726a2e2af65e13632c0\", \"method\": \"frappe.model.delete_doc.delete_dynamic_links\", \"site\": \"mfi-compat.localhost\", \"status\": \"JobStatus.QUEUED\"}",
+                1
+              ],
+              [
+                "{\"event\": null, \"job_name\": \"frappe.model.delete_doc.delete_dynamic_links\", \"kwargs_hash\": \"a8615b2a2f390da8be8a7b259853e4e596d08e852c2871f80c19eddb2276a99f\", \"method\": \"frappe.model.delete_doc.delete_dynamic_links\", \"site\": \"mfi-compat.localhost\", \"status\": \"JobStatus.QUEUED\"}",
+                1
+              ],
+              [
+                "{\"event\": null, \"job_name\": \"frappe.model.delete_doc.delete_dynamic_links\", \"kwargs_hash\": \"d6ba8be3ec7d9fb72a2d916953b36934d89891241a62b8a304665678b1a6c3b4\", \"method\": \"frappe.model.delete_doc.delete_dynamic_links\", \"site\": \"mfi-compat.localhost\", \"status\": \"JobStatus.QUEUED\"}",
+                1
+              ]
+            ],
+            "registries": {
+              "canceled": 0,
+              "deferred": 0,
+              "failed": 0,
+              "finished": 0,
+              "scheduled": 0,
+              "started": 0
+            }
+          },
+          "long": {
+            "jobs": [
+              [
+                "{\"event\": null, \"job_name\": \"frappe.search.website_search.build_index_for_all_routes\", \"kwargs_hash\": \"44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a\", \"method\": \"frappe.search.website_search.build_index_for_all_routes\", \"site\": \"mfi-compat.localhost\", \"status\": \"JobStatus.QUEUED\"}",
+                2
+              ]
+            ],
+            "registries": {
+              "canceled": 0,
+              "deferred": 0,
+              "failed": 0,
+              "finished": 0,
+              "scheduled": 0,
+              "started": 0
+            }
+          },
+          "short": {
+            "jobs": [],
+            "registries": {
+              "canceled": 0,
+              "deferred": 0,
+              "failed": 0,
+              "finished": 0,
+              "scheduled": 0,
+              "started": 0
+            }
+          }
+        },
+        "workers_count": 0
+      },
+      "raw_samples_equal": true,
+      "sample_hashes": {
+        "queue-1.json": "c28cefb1efd5ba36c81d103f28595fd11ee0112dc6cc442e541970439f7920a5",
+        "queue-2.json": "c28cefb1efd5ba36c81d103f28595fd11ee0112dc6cc442e541970439f7920a5",
+        "queue-3.json": "c28cefb1efd5ba36c81d103f28595fd11ee0112dc6cc442e541970439f7920a5"
+      },
+      "samples_semantically_equal": true
+    },
+    "build2": {
+      "normalized": {
+        "queues": {
+          "default": {
+            "jobs": [
+              [
+                "{\"event\": null, \"job_name\": \"frappe.model.delete_doc.delete_dynamic_links\", \"kwargs_hash\": \"156baecedc42d2471edcb58dfc579484abaa24ccbb6380a01332f766c9eb4a05\", \"method\": \"frappe.model.delete_doc.delete_dynamic_links\", \"site\": \"mfi-compat.localhost\", \"status\": \"JobStatus.QUEUED\"}",
+                1
+              ],
+              [
+                "{\"event\": null, \"job_name\": \"frappe.model.delete_doc.delete_dynamic_links\", \"kwargs_hash\": \"2050292501cfa1a475aec626631a8e82597fb2b0444ab5c82127c11f6c1690ed\", \"method\": \"frappe.model.delete_doc.delete_dynamic_links\", \"site\": \"mfi-compat.localhost\", \"status\": \"JobStatus.QUEUED\"}",
+                1
+              ],
+              [
+                "{\"event\": null, \"job_name\": \"frappe.model.delete_doc.delete_dynamic_links\", \"kwargs_hash\": \"30b2ad5601f43d4cdd1f17bd98bc7b627ffad47959581422aff58967ae9f1267\", \"method\": \"frappe.model.delete_doc.delete_dynamic_links\", \"site\": \"mfi-compat.localhost\", \"status\": \"JobStatus.QUEUED\"}",
+                1
+              ],
+              [
+                "{\"event\": null, \"job_name\": \"frappe.model.delete_doc.delete_dynamic_links\", \"kwargs_hash\": \"6317f7de350cc94702af10f93213b89bb54ebdaf8a0cf23a21c487eb94aa156f\", \"method\": \"frappe.model.delete_doc.delete_dynamic_links\", \"site\": \"mfi-compat.localhost\", \"status\": \"JobStatus.QUEUED\"}",
+                1
+              ],
+              [
+                "{\"event\": null, \"job_name\": \"frappe.model.delete_doc.delete_dynamic_links\", \"kwargs_hash\": \"64ba11f569ec8e686eede76ff3509acc0769558454335f93c894ba2acce91401\", \"method\": \"frappe.model.delete_doc.delete_dynamic_links\", \"site\": \"mfi-compat.localhost\", \"status\": \"JobStatus.QUEUED\"}",
+                1
+              ],
+              [
+                "{\"event\": null, \"job_name\": \"frappe.model.delete_doc.delete_dynamic_links\", \"kwargs_hash\": \"6d58a5acca921129af891c11a91b7af9c921dae516f302805f3e8d693a9e25d1\", \"method\": \"frappe.model.delete_doc.delete_dynamic_links\", \"site\": \"mfi-compat.localhost\", \"status\": \"JobStatus.QUEUED\"}",
+                1
+              ],
+              [
+                "{\"event\": null, \"job_name\": \"frappe.model.delete_doc.delete_dynamic_links\", \"kwargs_hash\": \"78fb66d384a976b9347b980be293cd01d44c583d2e4f865d627a0ece4489b2be\", \"method\": \"frappe.model.delete_doc.delete_dynamic_links\", \"site\": \"mfi-compat.localhost\", \"status\": \"JobStatus.QUEUED\"}",
+                1
+              ],
+              [
+                "{\"event\": null, \"job_name\": \"frappe.model.delete_doc.delete_dynamic_links\", \"kwargs_hash\": \"83b437a54c5f516ad530e7a083df173ee3149a9142a7e90a62ddd3686714e6e7\", \"method\": \"frappe.model.delete_doc.delete_dynamic_links\", \"site\": \"mfi-compat.localhost\", \"status\": \"JobStatus.QUEUED\"}",
+                1
+              ],
+              [
+                "{\"event\": null, \"job_name\": \"frappe.model.delete_doc.delete_dynamic_links\", \"kwargs_hash\": \"a2c92446f5aba5b1704d7b06ec69eae2b0d1605f6006ed677f22ec5b6b55a07b\", \"method\": \"frappe.model.delete_doc.delete_dynamic_links\", \"site\": \"mfi-compat.localhost\", \"status\": \"JobStatus.QUEUED\"}",
+                1
+              ],
+              [
+                "{\"event\": null, \"job_name\": \"frappe.model.delete_doc.delete_dynamic_links\", \"kwargs_hash\": \"a7e07ee951a6ef1b1880cfe74623276163eb7293411cf726a2e2af65e13632c0\", \"method\": \"frappe.model.delete_doc.delete_dynamic_links\", \"site\": \"mfi-compat.localhost\", \"status\": \"JobStatus.QUEUED\"}",
+                1
+              ],
+              [
+                "{\"event\": null, \"job_name\": \"frappe.model.delete_doc.delete_dynamic_links\", \"kwargs_hash\": \"a8615b2a2f390da8be8a7b259853e4e596d08e852c2871f80c19eddb2276a99f\", \"method\": \"frappe.model.delete_doc.delete_dynamic_links\", \"site\": \"mfi-compat.localhost\", \"status\": \"JobStatus.QUEUED\"}",
+                1
+              ],
+              [
+                "{\"event\": null, \"job_name\": \"frappe.model.delete_doc.delete_dynamic_links\", \"kwargs_hash\": \"d6ba8be3ec7d9fb72a2d916953b36934d89891241a62b8a304665678b1a6c3b4\", \"method\": \"frappe.model.delete_doc.delete_dynamic_links\", \"site\": \"mfi-compat.localhost\", \"status\": \"JobStatus.QUEUED\"}",
+                1
+              ]
+            ],
+            "registries": {
+              "canceled": 0,
+              "deferred": 0,
+              "failed": 0,
+              "finished": 0,
+              "scheduled": 0,
+              "started": 0
+            }
+          },
+          "long": {
+            "jobs": [
+              [
+                "{\"event\": null, \"job_name\": \"frappe.search.website_search.build_index_for_all_routes\", \"kwargs_hash\": \"44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a\", \"method\": \"frappe.search.website_search.build_index_for_all_routes\", \"site\": \"mfi-compat.localhost\", \"status\": \"JobStatus.QUEUED\"}",
+                2
+              ]
+            ],
+            "registries": {
+              "canceled": 0,
+              "deferred": 0,
+              "failed": 0,
+              "finished": 0,
+              "scheduled": 0,
+              "started": 0
+            }
+          },
+          "short": {
+            "jobs": [],
+            "registries": {
+              "canceled": 0,
+              "deferred": 0,
+              "failed": 0,
+              "finished": 0,
+              "scheduled": 0,
+              "started": 0
+            }
+          }
+        },
+        "workers_count": 0
+      },
+      "raw_samples_equal": true,
+      "sample_hashes": {
+        "queue-1.json": "cd4fb2f666ac8b5123211feb12f6a2bd76e059807d6ef93bad5c07e3dfe5d7cf",
+        "queue-2.json": "cd4fb2f666ac8b5123211feb12f6a2bd76e059807d6ef93bad5c07e3dfe5d7cf",
+        "queue-3.json": "cd4fb2f666ac8b5123211feb12f6a2bd76e059807d6ef93bad5c07e3dfe5d7cf"
+      },
+      "samples_semantically_equal": true
+    }
+  },
+  "builds_semantically_equal": true,
+  "ignored_fields": [
+    "job_id",
+    "enqueued_at",
+    "rq_keys",
+    "worker_names"
+  ],
+  "kind": "A7_SEMANTIC_COMPARISON_NOT_ACCEPTANCE",
+  "limitations": [
+    "Registry cardinalities compared; full registry payloads not captured",
+    "Three discrete samples do not prove continuous quiescence"
+  ],
+  "origin": "UNKNOWN in snapshots; source/history explanation is separate"
+}
