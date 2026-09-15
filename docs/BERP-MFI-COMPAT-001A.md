@@ -120,8 +120,8 @@ present. A missing trace is `UNKNOWN`, never inferred success.
 | A4 migration | clean migration and rerun result | Substantiated by prior execution |
 | A5 isolation | no public listeners, synthetic-only data, file/worker scope | Likely substantiated; evidence review retained |
 | A6 instrumentation | redacted transaction/SQL/lock/lifecycle trace | REOPENED — measured same-session evidence required |
-| A7 recreation | clean rebuild from scripts and manifest | REOPENED — semantic comparison required |
-| A8 handback | COMPAT-001 evidence bundle with hashes/reviewer | REOPENED — independent review required |
+| A7 recreation | clean rebuild from scripts and manifest | SUBSTANTIATED — bounded matched campaign; limits retained |
+| A8 handback | COMPAT-001 evidence bundle with hashes/reviewer | PARTIAL — A7 independent review complete; overall handback remains open |
 
 The verifier requires installed versions `frappe 16.33.1`, `erpnext 16.34.2` and
 `lending 16.5.0`, verifies the three source archive hashes, and hashes every regular

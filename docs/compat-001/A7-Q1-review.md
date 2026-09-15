@@ -1,6 +1,6 @@
 # A7-Q1 matched queue investigation
 
-Status: CANDIDATE EVIDENCE; A7 REOPENED; A8 REVIEW PENDING.
+Status: SUBSTANTIATED — BOUNDED; see [independent A8 review](A8-A7-review.md).
 
 ## Matched campaign result
 
@@ -55,9 +55,8 @@ quiescence. The campaign's own output is not independent review.
 
 ## Disposition
 
-Treat this as A7 candidate evidence only. Retain A7 reopened until an independent,
-read-only reviewer recomputes all six queue hashes and both manifests, checks the
-schedule and evaluates the comparator predicates without producer verdicts.
-A8 remains pending. A6 generic R2 evidence is bounded and independently reviewed;
+The independent A8 review recomputed the six queue hashes and both manifests,
+checked the schedule and ignored dimensions, and accepted the bounded predicates.
+A6 generic R2 evidence is bounded and independently reviewed;
 full C02 and C03 remain incomplete/unproven. Financial tests NOT RUN;
 B-BLK-01/02/03 OPEN; IMP-001 LOCKED.
