@@ -1,6 +1,6 @@
 # BERP-MFI-COMPAT-001A — Executable Lab Enablement & Instrumentation
 
-Status: ACTIVE / INCOMPLETE — lab enablement only; no financial blocker closed.
+Status: ACCEPTED — lab readiness only; no financial blocker closed.
 Date: 2026-09-15. Parent evidence unit: [COMPAT-001](BERP-MFI-COMPAT-001.md).
 Runtime candidate: [ARCH-001C R1](BERP-MFI-ARCH-001C.md).
 
@@ -111,14 +111,14 @@ present. A missing trace is `UNKNOWN`, never inferred success.
 
 | Evidence | Required artifact | Status |
 |---|---|---|
-| A1 pins | source/image hashes and installed versions | Partial: recorded by COMPAT-001 |
-| A2 services | private MariaDB/Redis health and version output | Partial: images measured; site connectivity pending |
-| A3 site | fresh synthetic site and installed-app manifest | Not run |
-| A4 migration | clean migration and rerun result | Not run |
-| A5 isolation | no public listeners, synthetic-only data, file/worker scope | Not run |
-| A6 instrumentation | redacted transaction/SQL/lock/lifecycle trace | Not run |
-| A7 recreation | clean rebuild from scripts and manifest | Not run |
-| A8 handback | COMPAT-001 evidence bundle with hashes/reviewer | Not run |
+| A1 pins | source/image hashes and installed versions | PASS — exact R1 inputs and versions |
+| A2 services | private MariaDB/Redis health and version output | PASS |
+| A3 site | fresh synthetic site and installed-app manifest | PASS |
+| A4 migration | clean migration and rerun result | PASS |
+| A5 isolation | no public listeners, synthetic-only data, file/worker scope | PASS |
+| A6 instrumentation | redacted transaction/SQL/lock/lifecycle trace | PASS — structured harmless probe |
+| A7 recreation | clean rebuild from scripts and manifest | PASS — second clean build |
+| A8 handback | COMPAT-001 evidence bundle with hashes/reviewer | PASS — persisted review |
 
 The verifier requires installed versions `frappe 16.33.1`, `erpnext 16.34.2` and
 `lending 16.5.0`, verifies the three source archive hashes, and hashes every regular
@@ -127,15 +127,15 @@ structured probe containing site, session, transaction, SQL, lock, timestamp and
 correlation fields. Any `UNKNOWN` in required evidence causes the verifier to fail;
 it cannot be treated as acceptance evidence.
 
-## 8. Current execution checkpoint
+## 8. Execution result
 
-The disposable site creation log reaches completion, and its redacted site metadata
-records `frappe 16.33.1`, `erpnext 16.34.2` and `lending 16.5.0`, with scheduler
-disabled and Redis configured on private loopback endpoints. This is partial A3/A4
-evidence only: the hardened verifier has not completed, migration rerun is not yet
-recorded, and A2 live service reachability, A5 isolation, A6 structured
-instrumentation, A7 clean recreation and A8 handback remain unproven. No financial
-test ran and no blocker status changed.
+On the private `berp-linux` VM, the frozen checkpoint runner passed STEP-01 through
+STEP-07 with `unknown_count=0`. Both the initial site and a clean destroy/recreate
+run installed `frappe 16.33.1`, `erpnext 16.34.2` and `lending 16.5.0`; migration
+and safe rerun passed; MariaDB and Redis remained private; and the structured probe
+recorded site, session, transaction, SQL, lock, timestamp and correlation fields.
+The A7 comparison is persisted as `evidence/recreation-compare.txt`, and the A8
+review is persisted as `evidence/a8-handback-review.txt`. No financial test ran.
 
 ## Failure and handback rules
 
@@ -146,7 +146,7 @@ invariant cannot be satisfied, create a `C-ARCH` finding and return to 001A revi
 Do not patch upstream, add an MFI hook, weaken a lock order, or call a financial test
 green to make the lab pass.
 
-When the acceptance contract is complete, hand back only the immutable manifest,
-redacted logs, topology and recreation commands. COMPAT-001 then resumes C02 before
-any financial prototype or Model A test. Until that handback, COMPAT-001A remains
-INCOMPLETE and the implementation gate remains locked.
+The acceptance contract is complete for lab readiness. Hand back only the immutable
+manifest, redacted logs, topology and recreation commands. COMPAT-001 now resumes C02
+transaction topology, then C03 lock-order feasibility, before any financial prototype
+or Model A test. B-BLK-01, B-BLK-02 and B-BLK-03 remain open and IMP-001 remains locked.

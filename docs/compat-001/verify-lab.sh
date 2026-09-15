@@ -88,7 +88,9 @@ for path in sorted(evidence.iterdir()):
     files[path.name] = hashlib.sha256(path.read_bytes()).hexdigest()
 unknown = 0
 for path in sorted(evidence.iterdir()):
-    if path.is_file() and path.name != "readiness-manifest.json":
+    # STEP-07.log is this verifier's live stdout capture. Scanning it would
+    # count the verifier's own status line ("UNKNOWN count=0") as evidence.
+    if path.is_file() and path.name not in {"readiness-manifest.json", "STEP-07.log", "checkpoints.jsonl"}:
         unknown += path.read_text(errors="replace").count("UNKNOWN")
 manifest = {
     "format": 1,
