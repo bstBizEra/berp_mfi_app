@@ -1,6 +1,6 @@
 # BERP-MFI-COMPAT-001 — Financial Runtime Compatibility Evidence
 
-Status: INCOMPLETE / BLOCKED — observation bundle only; no financial gate passed.
+Status: ACTIVE / INCOMPLETE — observation bundle only; no financial gate passed.
 Date: 2026-09-15. Candidate: [ARCH-001C R1](BERP-MFI-ARCH-001C.md).
 Architecture contracts: [001A](BERP-MFI-ARCH-001A.md), [001B](BERP-MFI-ARCH-001B.md).
 
@@ -48,7 +48,7 @@ and runtime call order remain unresolved.
 | Group | Required question | Current result | Class / status |
 |---|---|---|---|
 | C01 pins | Are exact upstream pins identified? | Yes, three commit SHAs and archive hashes recorded | C-OBS complete |
-| C02 topology | What transaction and DB boundaries are actually used? | Not yet instrumented in a working site | C-OBS incomplete |
+| C02 topology | What transaction and DB boundaries are actually used? | WSGI/rollback-only CLI baseline executed; trace retrieval/review pending; see [checkpoint](compat-001/C02-checkpoint.md) | C-OBS incomplete |
 | C03 lock order | Can policy → exposure → reservation → account/loan locks be acquired safely? | Not proven; source inspection found early Frappe document locking before pre-save methods | C-ARCH candidate / B-BLK-01 open |
 | C04 path inventory | Are Desk/REST/RPC/import/job/direct/bulk/cancel/repost paths classified? | Static candidates generated; resolved path × actor × bypass inventory not complete | C-MAP open / B-BLK-02 open |
 | C05 Lending mutations | Are all financial mutation and cancellation paths mapped? | Repayment/disbursement symbols inspected; other actions remain unresolved | C-OBS incomplete |

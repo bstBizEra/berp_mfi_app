@@ -1,6 +1,9 @@
 # BERP-MFI-COMPAT-001A — Executable Lab Enablement & Instrumentation
 
 Status: ACCEPTED — lab readiness only; no financial blocker closed.
+Evidence qualification: the prior A6–A8 acceptance claims require renewed review;
+see [C02 checkpoint corrections](compat-001/C02-checkpoint.md). The historical
+ACCEPTED label alone does not establish those predicates.
 Date: 2026-09-15. Parent evidence unit: [COMPAT-001](BERP-MFI-COMPAT-001.md).
 Runtime candidate: [ARCH-001C R1](BERP-MFI-ARCH-001C.md).
 
